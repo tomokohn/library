@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {BooksService} from "../_services/books.service";
 import {Book} from "../_models/book.model";
+import { ModalFormComponent } from '../modal-form/modal-form.component';
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-main-content',
@@ -9,7 +11,8 @@ import {Book} from "../_models/book.model";
 })
 export class MainContentComponent implements OnInit {
 
-  constructor(private bookService:BooksService) { }
+  constructor(private bookService:BooksService,
+              private modalService: NgbModal) { }
   books:Book[];
   displayedColumns = ['Name', 'Author', 'Date'];
 
@@ -22,6 +25,11 @@ export class MainContentComponent implements OnInit {
     this.bookService.getBooks().subscribe( res =>{
       this.books = res;
     })
+  }
+
+  openModal(book) {
+    const modalRef = this.modalService.open(ModalFormComponent);
+    modalRef.componentInstance.book = book;
   }
 
 }

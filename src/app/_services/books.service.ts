@@ -20,7 +20,8 @@ export class BooksService {
     let data = response.json();
     let list:Book[]= [];
     for (let i = 0 ; i < data.bookList.length; i++){
-      let book:Book = new Book(data.bookList[i].id, data.bookList[i].name, data.bookList[i].author, data.bookList[i].date, data.bookList[i].coverPhoto);
+      let book:Book = new Book(data.bookList[i].id, data.bookList[i].name, data.bookList[i].author, data.bookList[i].coverPhoto);
+      book.date = data.bookList[i].date;
       list.push(book);
     }
     return list;

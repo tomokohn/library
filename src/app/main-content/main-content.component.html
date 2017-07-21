@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="md-12">
+    <div class="col-md-12">
       <h2>Book List:</h2>
       <table class="table">
         <thead>
@@ -15,12 +15,12 @@
         <tbody>
         <tr *ngFor="let book of books">
           <td>
-            <img src="{{book.coverPhoto}}" alt="" class="cover-photo">
+            <img src="{{book.coverPhoto}}" onerror="this.src='assets/no-image-book.png'" alt="" class="cover-photo">
           </td>
           <td>{{book.name}}</td>
           <td>{{book.author}}</td>
-          <td>{{book.date}}</td>
-          <td><button type="button" class="btn btn-default edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+          <td>{{book.date.day + '/' + book.date.month + '/' + book.date.year}}</td>
+          <td><button type="button" class="btn btn-default edit" (click)="openModal(book)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
         </tr>
 
       </table>

@@ -1,0 +1,13 @@
+div.preview-photo h5 {
+  margin: 15px;
+}
+
+div.preview-photo img {
+  display: block;
+  margin: 20px auto;
+  width: 90px;
+}
+
+input.ng-invalid {
+  border: 1px solid red;
+}

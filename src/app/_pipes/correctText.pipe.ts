@@ -2,20 +2,16 @@ import {Pipe, PipeTransform} from '@angular/core';
 @Pipe({name: 'correctText'})
 export class CorrectTextPipe implements PipeTransform {
   transform(arg) : any {
-    //const pattern = /[a-zA-Z0-9 &\.-]\w/
-    // for (let i = 0; i<arg.length; i++){
-    //       if (arg[i] != pattern) {
-    //         arg.slice(i,1);
-    //   }
-    // }
-      this.camelize(arg);
-    debugger
-    return arg;
+    const regex = /[_+!@#$%^&*();\/|<>"']/g
+     let cleanArg = arg.replace(regex,arg =>''); // remove special characters
+
+    return this.upperCaseWords(cleanArg);
   }
 
-  camelize(str) {
-  return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
-    return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
-  }).replace(/\s+/g, '');
-}
+  upperCaseWords(str) {
+    let res = str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()});
+    return res;
+    }
+
+
 }

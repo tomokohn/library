@@ -30,6 +30,22 @@ export class MainContentComponent implements OnInit {
   openModal(book) {
     const modalRef = this.modalService.open(ModalFormComponent);
     modalRef.componentInstance.book = book;
+    modalRef.componentInstance.books = this.books;
+    modalRef.componentInstance.isEdit = true;
   }
 
+  AddNewBookClicked(){
+    const modalRef = this.modalService.open(ModalFormComponent);
+    modalRef.componentInstance.books = this.books;
+    modalRef.componentInstance.isEdit = false;
+  }
+
+  deleteBook(book){
+    for(let i=0; i<this.books.length; i++){
+      if (book.id === this.books[i].id) {
+        this.books.splice(i,1);
+        break;
+      }
+    }
+  }
 }

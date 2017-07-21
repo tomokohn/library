@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+h1 {
+  font-family: 'Pacifico';
+  color: #1473e6;
+  text-shadow: 1px 1px #b0b0b0, 2px 2px #b0b0b0, 3px 3px #797979, 4px 4px #797979, 5px 5px #5c5c5c, 6px 6px #5c5c5c, 7px 7px #404040, 8px 8px #404040, 9px 9px #232323, 10px 10px #232323, 11px 11px #111111, 12px 12px #111111, 13px 13px #000000, 14px 14px #000000;
+  font-size: 100px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 7px;
+  transform: rotate(-3deg);
+}

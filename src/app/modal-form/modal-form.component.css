@@ -8,6 +8,10 @@ div.preview-photo img {
   width: 90px;
 }
 
-input.ng-invalid {
+input.ng-invalid.ng-touched {
   border: 1px solid red;
+}
+
+div.title-alert {
+  margin-top: 10px;
 }

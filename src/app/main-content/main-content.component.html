@@ -1,15 +1,18 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h2>Book List:</h2>
+      <button class="btn btn-success add-btn" (click)="AddNewBookClicked()">Add New Book<i class="fa fa-plus" aria-hidden="true"></i></button>
+      <h2 >Book List:</h2>
+
       <table class="table">
         <thead>
         <tr>
           <th class="column-title">Cover</th>
-          <th class="column-title">Name</th>
+          <th class="column-title">Title</th>
           <th class="column-title">Author</th>
           <th class="column-title">Date</th>
-          <th class="column-title"><i class="fa fa-pencil-square" aria-hidden="true"></i></th>
+          <th class="column-title">Edit</th>
+          <th class="column-title">Delete</th>
         </tr>
         </thead>
         <tbody>
@@ -17,10 +20,11 @@
           <td>
             <img src="{{book.coverPhoto}}" onerror="this.src='assets/no-image-book.png'" alt="" class="cover-photo">
           </td>
-          <td>{{book.name}}</td>
-          <td>{{book.author}}</td>
+          <td>{{book.name | correctText}}</td>
+          <td>{{book.author | correctText}}</td>
           <td>{{book.date.day + '/' + book.date.month + '/' + book.date.year}}</td>
           <td><button type="button" class="btn btn-default edit" (click)="openModal(book)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+          <td><button type="button" class="btn btn-danger edit" (click)="deleteBook(book)"><i class="fa fa-times" aria-hidden="true"></i></button></td>
         </tr>
 
       </table>

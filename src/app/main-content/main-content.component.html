@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="md-12">
+      <h2>Book List:</h2>
+      <table class="table">
+        <thead>
+        <tr>
+          <th class="column-title">Cover</th>
+          <th class="column-title">Name</th>
+          <th class="column-title">Author</th>
+          <th class="column-title">Date</th>
+          <th class="column-title"><i class="fa fa-pencil-square" aria-hidden="true"></i></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let book of books">
+          <td>
+            <img src="{{book.coverPhoto}}" alt="" class="cover-photo">
+          </td>
+          <td>{{book.name}}</td>
+          <td>{{book.author}}</td>
+          <td>{{book.date}}</td>
+          <td><button type="button" class="btn btn-default edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+</div>

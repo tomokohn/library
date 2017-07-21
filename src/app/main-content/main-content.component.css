@@ -1,0 +1,16 @@
+table.table th.column-title{
+  font-size: 1.5em;
+}
+
+table.table th.column-title:last-of-type{
+  text-align: center;
+}
+
+table.table img.cover-photo{
+  width: 90px;
+}
+
+table.table button.edit {
+  width: 100%;
+}
+

@@ -14,7 +14,6 @@ export class MainContentComponent implements OnInit {
   constructor(private bookService:BooksService,
               private modalService: NgbModal) { }
   books:Book[];
-  displayedColumns = ['Name', 'Author', 'Date'];
 
 
   ngOnInit() {
@@ -41,10 +40,13 @@ export class MainContentComponent implements OnInit {
   }
 
   deleteBook(book){
-    for(let i=0; i<this.books.length; i++){
-      if (book.id === this.books[i].id) {
-        this.books.splice(i,1);
-        break;
+    let confirmDelete = confirm("Are You sure you want to delete" + (this.bookService.correctText(book.name)));
+    if (confirmDelete){
+      for(let i=0; i<this.books.length; i++){
+        if (book.id === this.books[i].id) {
+          this.books.splice(i,1);
+          break;
+        }
       }
     }
   }

@@ -1,8 +1,9 @@
 import {Pipe, PipeTransform} from '@angular/core';
+
 @Pipe({name: 'correctText'})
 export class CorrectTextPipe implements PipeTransform {
   transform(arg) : any {
-    const regex = /[_+!@#$%^&*();\/|<>"']/g
+    const regex = /[_+!@#$%^&*();\/|<>"']/g;
      let cleanArg = arg.replace(regex,arg =>''); // remove special characters
 
     return this.upperCaseWords(cleanArg);

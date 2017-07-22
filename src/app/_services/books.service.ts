@@ -41,4 +41,17 @@ export class BooksService {
     console.error(errMsg);
     return Observable.throw(errMsg);
   }
+
+  correctText(text){
+    const regex = /[_+!@#$%^&*();\/|<>"']/g;
+    let cleanArg = text.replace(regex,text =>''); // remove special characters
+
+    return this.upperCaseWords(cleanArg);
+  }
+
+  upperCaseWords(str) {
+    let res = str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()});
+    return res;
+
+  }
 }

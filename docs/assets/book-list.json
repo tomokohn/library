@@ -1,0 +1,103 @@
+{
+  "bookList": [
+    {
+      "id": 1,
+      "name": "Star Wars trilogy",
+      "author": "George Lucas, Donald F. Glut, James Kahn",
+      "date": {
+        "year": 2002,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "https://books.google.co.il/books/content?id=pevF1lrz9TQC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72fLv9K8_L6YxA5f1GeIAKaTjEs_ouzZg13UZIHbSOjzQ3FZpAF1wrGUfaxZGU92frcpR1xU4Ddf4oUq9h0M195fnu6WR93c9wl5t2ywSIAGVzgn-P9R5rvFrKi1mgJoaRM0hTt"
+    },
+    {
+      "id": 2,
+      "name": "1984",
+      "author": "George Orwell",
+      "date": {
+        "year": 1963,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "http://booksat.scarlettrugers.com/bookcoverdesign/wp-content/uploads/2013/10/1984-book-cover.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "date": {
+        "year": 1979,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "https://vignette4.wikia.nocookie.net/hitchhikers/images/1/11/The_Hitchhiker%27s_Guide_to_the_Galaxy.jpg/revision/latest?cb=20140520174710"
+    },
+    {
+      "id": 4,
+      "name": "The Restaurant at the End of the Universe",
+      "author": "Douglas Adams",
+      "date": {
+        "year": 1984,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "https://s-media-cache-ak0.pinimg.com/originals/06/62/3b/06623bae230aa7d71c0ba6e6503370f1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dirk Gently's Holistic Detective Agency",
+      "author": "Douglas Adams",
+      "date": {
+        "year": 1987,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Dirk_Gently_UK_front_cover.jpg/200px-Dirk_Gently_UK_front_cover.jpg"
+    },
+    {
+      "id": 6,
+      "name": "A Game of Thrones",
+      "author": "George R.R. Martin",
+      "date": {
+        "year": 1996,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "https://vignette1.wikia.nocookie.net/iceandfire/images/b/b6/Game_of_thrones.jpeg/revision/latest/scale-to-width-down/310?cb=20130302001049"
+    },
+    {
+      "id": 7,
+      "name": "A Clash of Kings",
+      "author": "George R.R. Martin",
+      "date": {
+        "year": 1998,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "https://vignette2.wikia.nocookie.net/iceandfire/images/c/cc/ACoK_UK_Current.jpg/revision/latest/scale-to-width-down/150?cb=20090615005027"
+    },
+    {
+      "id": 8,
+      "name": "A STORM OF SWORDS",
+      "author": "George R.R. Martin",
+      "date": {
+        "year": 2000,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "http://cdn.collider.com/wp-content/uploads/a-storm-of-swords-book-cover.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J. K. Rowling",
+      "date": {
+        "year": 1997,
+        "month": 1,
+        "day" : 1
+      },
+      "coverPhoto": "https://ewedit.files.wordpress.com/2016/09/kkhp3.jpg?w=402"
+    }
+  ]
+}
